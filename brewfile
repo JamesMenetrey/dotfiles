@@ -1,0 +1,14 @@
+brew update
+
+brew tap thoughtbot/formulae
+brew install rcm
+
+brew cask install iterm2
+brew cask install java
+brew cask install visual-studio-code
+brew cask install jabref
+
+brew install vim
+brew install scala
+brew install sbt
+brew install jenv

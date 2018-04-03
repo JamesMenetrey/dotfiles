@@ -1,0 +1,10 @@
+# aliases for rsync
+rsyncFlags=('-rtv' '--max-size=60m', '--delete') # r=recursive, t=keep timestamp, v=verbose
+localPathBase='/Users/james/Dropbox/Studies/HEIG-VD/Cours/4e/'
+remotePathBase='/Volumes/profs/'
+
+alias progconc='rsync ${rsyncFlags[@]} "$remotePathBase/EZN/COURS PROGCONC/" "$localPathBase/ProgConc/Cours/" && cd "$localPathBase/ProgConc/Cours"'
+alias theocplx='rsync ${rsyncFlags[@]} "$remotePathBase/OBI/TheoCplx - 2018/" "$localPathBase/TheoCplx/Cours/" && cd "$localPathBase/TheoCplx/Cours"'
+alias comp='rsync ${rsyncFlags[@]} "$remotePathBase/EZN/Techniques Compilation/" "$localPathBase/Comp/Cours/" && cd "$localPathBase/Comp/Cours"'
+alias adist='rsync ${rsyncFlags[@]} "$remotePathBase/RAB/AD/" "$localPathBase/ADist/Cours/AD/" && cd "$localPathBase/ADist/Cours/AD/"'
+alias servres='rsync ${rsyncFlags[@]} "$remotePathBase/ABR/ServRes/" "$localPathBase/ServRes/Cours/" && cd "$localPathBase/Servres/Cours/"'
